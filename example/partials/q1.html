@@ -1,0 +1,22 @@
+
+<div class="q1" ng-controller="MyCtrl1">
+    <p>1. Which is not an advantage of using a closure?</p>
+	
+    <form class="options form">
+    <p><input type="radio" value="Prevent pollution of global scope" id="1" name="quiz" ng-model="quiz">
+		<label for="1">A. Prevent pollution of global scope</label></p>
+		
+    <p><input type="radio" value="Encapsulation" id="2" name="quiz" ng-model="quiz">
+		<label for="2">B. Encapsulation</label></p>
+		
+    <p><input type="radio" value="Private properties and methods" id="3" name="quiz" ng-model="quiz">
+		<label for="3">C. Private properties and methods</label></p>
+		
+    <p><input type="radio" value="Allow conditional use of ‘strict mode’" id="4" name="quiz" ng-model="quiz">
+		<label for="4">D. Allow conditional use of ‘strict mode’</label></p>
+		
+        <p><a href="#/q2"><button type="submit">Continue</button></a></p>
+		
+    </form>
+	<p><b>Currently Selected:</b> <span>{{quiz}}</span></p>
+</div>

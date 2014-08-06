@@ -1,0 +1,16 @@
+<ul class="navigation">
+    <li><a href="#/login">Login</a></li>
+    <li><a href="#/signup">Register</a></li>
+</ul>
+
+<form ua-signup ng-show="!verificationEmailSent"  class="form">
+	
+	<input name="login" ua-is-email placeholder="Email"><br>
+	<input name="password" placeholder="Password" type="password"><br>
+	<p><button type="submit">Register</button></p>
+	
+	<p ng-show="loading"><img src="https://app.userapp.io/img/ajax-loader-transparent.gif"></p>
+	<p ng-show="error">{{ error.message }}</p>
+</form>
+
+<p ng-show="verificationEmailSent">An email has been sent to your inbox. Click on the link to verify your account.</p>

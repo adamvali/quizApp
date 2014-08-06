@@ -1,0 +1,15 @@
+<div class="q5" ng-controller="MyCtrl5">
+    <p>5. Given &lt;div id=”outer”&gt; &lt;div class=”inner”&gt;&lt;/div&gt;&lt;/div&gt;, which of these two is the most performant way to select the inner div?</p>
+	
+    <form class="options form">
+    <p><input type="radio" value="getElementById("outer").children[0]" id="1" name="quiz" ng-model="quiz">
+		<label for="1">A. getElementById("outer").children[0]</label></p>
+		
+    <p><input type="radio" value="getElementsByClassName("inner")[0]" id="2" name="quiz" ng-model="quiz">
+		<label for="2">B. getElementsByClassName("inner")[0]</label></p>
+		
+        <p><a href="#/q6"><button type="submit">Continue</button></a></p>
+    </form>
+	
+	<p><b>Currently Selected:</b> <span>{{quiz}}</span></p>
+</div>

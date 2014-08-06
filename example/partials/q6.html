@@ -1,0 +1,36 @@
+<div class="q6" ng-controller="MyCtrl6">
+    <p>6. Given this:
+        angular.module(‘myModule’,[]).service(‘myService’,(function() {
+        var message = “Message one!”
+        var getMessage = function() {
+        return this.message
+        } this.message =
+        “
+        Message two!”
+        this.getMessage = function() { return message }
+        return function() {
+        return {
+        getMessage: getMessage,
+        message: “Message three!”
+        }
+        }
+        })())
+        Which message will be returned by
+        injecting this service and executing
+        “myService.getMessage()”
+    </p>
+    <form class="options form">
+        <p><input type="radio" value="1" id="1" name="quiz" ng-model="quiz">
+			<label for="1">A. 1</label></p>
+		
+        <p><input type="radio" value="2" id="2" name="quiz" ng-model="quiz">
+			<label for="2">B. 2</label></p>
+		
+        <p><input type="radio" value="3" id="3" name="quiz" ng-model="quiz">
+			<label for="3">C. 3</label></p>
+		
+        <p><a href="#/result"><button type="submit">Continue</button></a></p>
+    </form>
+	
+	<p><b>Currently Selected:</b> <span>{{quiz}}</span></p>
+</div>

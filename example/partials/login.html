@@ -1,0 +1,15 @@
+<ul class="navigation">
+    <li><a href="#/login">Login</a></li>
+    <li><a href="#/signup">Register</a></li>
+</ul>
+
+<form ua-login class="form">
+	<input name="login" placeholder="Email"><br>
+	<input name="password" placeholder="Password" type="password"><br>
+	<p><button type="submit">Login</button></p>
+	
+	<p ng-show="loading"><img src="https://app.userapp.io/img/ajax-loader-transparent.gif"></p>
+	<p ng-show="error">{{ error.message }}</p>
+</form>
+
+

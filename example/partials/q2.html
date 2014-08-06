@@ -1,0 +1,26 @@
+<div class="q2" ng-controller="MyCtrl2">
+    <p>2. To create a columned list of two-line email subjects and dates for a master-detail view, which are the most semantically correct?</p>
+    <form class="options form">
+    <p><input type="radio" value="<div>+<span>" id="1" name="quiz" ng-model="quiz">
+		<label for="1">A. &lt;div&gt;+&lt;span&gt;</label></p>
+		
+    <p><input type="radio" value="<tr>+<td>" id="2" name="quiz" ng-model="quiz">
+		<label for="2">B. &lt;tr&gt;+&lt;td&gt;</label></p>
+		
+    <p><input type="radio" value="<ul>+<li>" id="3" name="quiz" ng-model="quiz">
+		<label for="3">C. &lt;ul&gt;+&lt;li&gt;</label></p>
+		
+    <p><input type="radio" value="<p>+<br>" id="4" name="quiz" ng-model="quiz">
+		<label for="4">D. &lt;p&gt;+&lt;br&gt;</label></p>
+		
+    <p><input type="radio" value="none of these" id="5" name="quiz" ng-model="quiz">
+		<label for="5">E. none of these</label></p>
+		
+    <p><input type="radio" value="all of these" id="6" name="quiz" ng-model="quiz">
+		<label for="6">F. all of these</label></p>
+		
+        <p><a href="#/q3"><button type="submit">Continue</button></a></p>
+    </form>
+<p><b>Currently Selected:</b> <span>{{quiz}}</span></p>
+</div>
+

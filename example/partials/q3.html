@@ -1,0 +1,17 @@
+<div class="q3"  ng-controller="MyCtrl3">
+    <p>3. To pass an array of strings to a function, you should not use...</p>
+    <form class="options form">
+    <p><input type="radio" value="fn.apply(this, stringsArray)" id="1" name="quiz" ng-model="quiz">
+		<label for="1">A. fn.apply(this, stringsArray)</label></p>
+		
+    <p><input type="radio" value="fn.call(this, stringsArray)" id="2" name="quiz" ng-model="quiz">
+		<label for="2">B. fn.call(this, stringsArray)</label></p>
+		
+    <p><input type="radio" value="fn.bind(this, stringsArray)" id="3" name="quiz" ng-model="quiz">
+		<label for="3">C. fn.bind(this, stringsArray)</label></p>
+		
+        <p><a href="#/q4"><button type="submit">Continue</button></a></p>
+    </form>
+	
+	<p><b>Currently Selected:</b> <span>{{quiz}}</span></p>
+</div>
